@@ -1,0 +1,498 @@
+{
+  "run_at": "2026-05-23T07:43:00.373340",
+  "dataset_path": "C:\\Users\\sidgr\\.gemini\\antigravity\\scratch\\deep_research_agent\\eval\\dataset.json",
+  "results": [
+    {
+      "id": "eval_001",
+      "type": "factual",
+      "query": "What is the exact release date of Python 3.12?",
+      "expected_behavior": "Answer with the specific Python 3.12 release date and cite the supporting source.",
+      "session_id": "2b632558-8496-456f-af32-f6c83af7db89",
+      "final_answer": "I cannot find sufficient evidence to answer this. The provided web context does not contain the exact release date of Python 3.12 [1][2]. It only mentions the release of Python 3.12.12, a security bugfix release [1], and the end of regular bug fixes for Python 3.12 [1]. To find the exact release date, a refined search may be necessary.",
+      "citations": {
+        "1": {
+          "title": "Python Release Python 3.12.12 | Python.org",
+          "url": "https://www.python.org/downloads/release/python-31212",
+          "domain": "python.org",
+          "snippet_preview": "Python 3.12.12\nRelease date: Oct. 9, 2025\nThis is a security release of Python 3.12\nNote: The release you're looking at is Python 3.12.12, a security bugfix release for the legacy 3.12 series. Python "
+        },
+        "2": {
+          "title": "Python Version History - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/python/python-version-history",
+          "domain": "geeksforgeeks.org",
+          "snippet_preview": "Python, one of the most popular programming languages today, has a rich history of development and evolution. From its inception in the late 1980s to its current status as a versatile and powerful lan"
+        },
+        "3": {
+          "title": "History of Python — Unofficial Python Development (Victor's notes)  documentation",
+          "url": "https://pythondev.readthedocs.io/history.html",
+          "domain": "pythondev.readthedocs.io",
+          "snippet_preview": "History of Python¶\nGuido van Rossum started to write Python in December 1989.\nSee also Python Development Workflow.\nHistory of Python releases¶\nSee also Status of Python branches.\nPython 3.14: October"
+        }
+      },
+      "pages_used": 3,
+      "conflict_warning": "Sources disagree: The first and third snippets contradict on the claim about the future development of Python 3.12. The first snippet states that Python 3.12 is no longer receiving regular bug fixes and is only getting security fixes, while the second and third snippets (which appear to be identical",
+      "done_step": {
+        "step": "done",
+        "turn_id": 69,
+        "citation_map": {
+          "1": {
+            "title": "Python Release Python 3.12.12 | Python.org",
+            "url": "https://www.python.org/downloads/release/python-31212",
+            "domain": "python.org",
+            "snippet_preview": "Python 3.12.12\nRelease date: Oct. 9, 2025\nThis is a security release of Python 3.12\nNote: The release you're looking at is Python 3.12.12, a security bugfix release for the legacy 3.12 series. Python "
+          },
+          "2": {
+            "title": "Python Version History - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python/python-version-history",
+            "domain": "geeksforgeeks.org",
+            "snippet_preview": "Python, one of the most popular programming languages today, has a rich history of development and evolution. From its inception in the late 1980s to its current status as a versatile and powerful lan"
+          },
+          "3": {
+            "title": "History of Python — Unofficial Python Development (Victor's notes)  documentation",
+            "url": "https://pythondev.readthedocs.io/history.html",
+            "domain": "pythondev.readthedocs.io",
+            "snippet_preview": "History of Python¶\nGuido van Rossum started to write Python in December 1989.\nSee also Python Development Workflow.\nHistory of Python releases¶\nSee also Status of Python branches.\nPython 3.14: October"
+          }
+        },
+        "pages_used": 3
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 3,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 53.59
+    },
+    {
+      "id": "eval_002",
+      "type": "multi-hop",
+      "query": "Who is the CEO of the company that created the Claude 3 AI model, and what was their previous job?",
+      "expected_behavior": "Identify Anthropic as the creator of Claude 3, name its CEO, and connect that person to their prior role with citations.",
+      "session_id": "b42c686d-5b8f-477b-9cec-8535998278c4",
+      "final_answer": "Here are the key facts about the CEO of the company that created the Claude AI model:\n1. The CEO of the company behind Claude is Dario Amodei [1].\n2. Dario Amodei was a former OpenAI employee before co-founding Anthropic [2].\n3. He co-founded Anthropic with 6 other former OpenAI employees in 2021 [2]. \n\nNote that the provided web context does not specifically mention \"Claude 3\", but it does mention the Claude AI model in general [1][2][3].",
+      "citations": {
+        "1": {
+          "title": "The CEO of the Company Behind Claude Just Told the Pentagon “No.”",
+          "url": "https://bitfinance.substack.com/p/the-ceo-of-the-company-behind-claude",
+          "domain": "bitfinance.substack.com",
+          "snippet_preview": "The CEO of the Company Behind Claude Just Told the Pentagon “No.”\nHere Is What It Means for You.\nDario Amodei is the CEO of Anthropic, the company behind Claude, the AI model I use every single day to"
+        },
+        "2": {
+          "title": "7 Founders of Claude AI: Story & Net Worth",
+          "url": "https://www.houstonitdevelopers.com/blog/anthropic-founders-who-created-claude-ai",
+          "domain": "houstonitdevelopers.com",
+          "snippet_preview": "Quick Answer: Anthropic was founded in 2021 by 7 former OpenAI employees who left over AI safety disagreements. The founders—Dario Amodei (CEO), Daniela Amodei (President), Chris Olah, Tom Brown, Sam "
+        },
+        "3": {
+          "title": "Who Owns Claude AI? Inside Anthropic’s Founders & Investors",
+          "url": "https://anatechconsultancy.com/blog/who-owns-claude-ai",
+          "domain": "anatechconsultancy.com",
+          "snippet_preview": "Who really owns Claude AI? With Amazon and Google investing billions, it’s easy to assume one of them controls the fast-growing Claude AI chatbot. In reality, the story behind who owns Claude AI revea"
+        }
+      },
+      "pages_used": 3,
+      "conflict_warning": null,
+      "done_step": {
+        "step": "done",
+        "turn_id": 70,
+        "citation_map": {
+          "1": {
+            "title": "The CEO of the Company Behind Claude Just Told the Pentagon “No.”",
+            "url": "https://bitfinance.substack.com/p/the-ceo-of-the-company-behind-claude",
+            "domain": "bitfinance.substack.com",
+            "snippet_preview": "The CEO of the Company Behind Claude Just Told the Pentagon “No.”\nHere Is What It Means for You.\nDario Amodei is the CEO of Anthropic, the company behind Claude, the AI model I use every single day to"
+          },
+          "2": {
+            "title": "7 Founders of Claude AI: Story & Net Worth",
+            "url": "https://www.houstonitdevelopers.com/blog/anthropic-founders-who-created-claude-ai",
+            "domain": "houstonitdevelopers.com",
+            "snippet_preview": "Quick Answer: Anthropic was founded in 2021 by 7 former OpenAI employees who left over AI safety disagreements. The founders—Dario Amodei (CEO), Daniela Amodei (President), Chris Olah, Tom Brown, Sam "
+          },
+          "3": {
+            "title": "Who Owns Claude AI? Inside Anthropic’s Founders & Investors",
+            "url": "https://anatechconsultancy.com/blog/who-owns-claude-ai",
+            "domain": "anatechconsultancy.com",
+            "snippet_preview": "Who really owns Claude AI? With Amazon and Google investing billions, it’s easy to assume one of them controls the fast-growing Claude AI chatbot. In reality, the story behind who owns Claude AI revea"
+          }
+        },
+        "pages_used": 3
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 3,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 60.06
+    },
+    {
+      "id": "eval_003",
+      "type": "comparison",
+      "query": "Compare the context window sizes of Gemini 1.5 Pro and GPT-4o.",
+      "expected_behavior": "Compare both models directly, state context window sizes, and cite sources for each value.",
+      "session_id": "210687c0-ea85-432f-974b-ed3642044378",
+      "final_answer": "I cannot find sufficient evidence to answer this question as there is no information about Gemini 1.5 Pro in the provided web context [1][2][3][4][5]. The context only discusses GPT-4, GPT-4o, and GPT-4.1 models, but does not mention Gemini 1.5 Pro. To provide a comparison, I would need more information about the context window size of Gemini 1.5 Pro. \n\nHowever, I can provide the context window size of GPT-4o, which is 128K [2][3][5].",
+      "citations": {
+        "1": {
+          "title": "GPT-4.1 and o4-mini: Is OpenAI Overselling Long-Context?",
+          "url": "https://blog.getzep.com/gpt-4-1-and-o4-mini-is-openai-overselling-long-context",
+          "domain": "blog.getzep.com",
+          "snippet_preview": "GPT-4.1 and o4-mini: Is OpenAI Overselling Long-Context?\nWe put OpenAI’s latest models through the LongMemEval benchmark—here’s why raw context size alone isn't enough.\nOpenAI has just released severa"
+        },
+        "2": {
+          "title": "GPT-4o Context Window is 128K but Getting error model's maximum context length is 8192 tokens, however you requested 21026 tokens - API - OpenAI Developer Community",
+          "url": "https://community.openai.com/t/gpt-4o-context-window-is-128k-but-getting-error-models-maximum-context-length-is-8192-tokens-however-you-requested-21026-tokens/802809",
+          "domain": "community.openai.com",
+          "snippet_preview": "We have taken subscription of paid API key for accessing Open AI models through API in our Python Code and currently we are in Tier 1. I am using ‘GPT-4o’ model and performing RAG over our custom data"
+        },
+        "3": {
+          "title": "GPT-4, 128K context - it is not big enough - DEV Community",
+          "url": "https://dev.to/maximsaplin/gpt-4-128k-context-it-is-not-big-enough-1h02",
+          "domain": "dev.to",
+          "snippet_preview": "OpenAI has recently introduced the GPT-4 Turbo model with a 128K context window. A 4x boost to the previous maximum of 32K in GPT-4.\nDid you know that this context size is enough to hold 1684 tweets o"
+        },
+        "4": {
+          "title": "Azure OpenAI Model: gpt-4.1 context window exceeded with way less than 1M tokens - Microsoft Q&A",
+          "url": "https://learn.microsoft.com/en-au/answers/questions/2280883/azure-openai-model-gpt-4-1-context-window-exceeded",
+          "domain": "learn.microsoft.com",
+          "snippet_preview": "An Azure service that provides access to OpenAI’s GPT-3 models with enterprise capabilities.\nHi Thiago Almeida,\nEven though GPT-4.1 supports up to 1 million tokens, in Azure OpenAI, the full 1M-token "
+        },
+        "5": {
+          "title": "What is the context window of gpt 4 - API - OpenAI Developer Community",
+          "url": "https://community.openai.com/t/what-is-the-context-window-of-gpt-4/701256",
+          "domain": "community.openai.com",
+          "snippet_preview": "What is the context window of GPT 4 turbo. In the below image what will be context window of first gpt. Any official source\nYou can check this information in the OpenAI documentation. GPT-4 also known"
+        }
+      },
+      "pages_used": 5,
+      "conflict_warning": "Sources disagree: The first and fourth snippets contradict on the claim of the context window size of GPT-4.1 and its availability. The first snippet states that GPT-4.1 has a 1M-token context window, while the fourth snippet states that the full 1M-token context is only available on certain deploym",
+      "done_step": {
+        "step": "done",
+        "turn_id": 71,
+        "citation_map": {
+          "1": {
+            "title": "GPT-4.1 and o4-mini: Is OpenAI Overselling Long-Context?",
+            "url": "https://blog.getzep.com/gpt-4-1-and-o4-mini-is-openai-overselling-long-context",
+            "domain": "blog.getzep.com",
+            "snippet_preview": "GPT-4.1 and o4-mini: Is OpenAI Overselling Long-Context?\nWe put OpenAI’s latest models through the LongMemEval benchmark—here’s why raw context size alone isn't enough.\nOpenAI has just released severa"
+          },
+          "2": {
+            "title": "GPT-4o Context Window is 128K but Getting error model's maximum context length is 8192 tokens, however you requested 21026 tokens - API - OpenAI Developer Community",
+            "url": "https://community.openai.com/t/gpt-4o-context-window-is-128k-but-getting-error-models-maximum-context-length-is-8192-tokens-however-you-requested-21026-tokens/802809",
+            "domain": "community.openai.com",
+            "snippet_preview": "We have taken subscription of paid API key for accessing Open AI models through API in our Python Code and currently we are in Tier 1. I am using ‘GPT-4o’ model and performing RAG over our custom data"
+          },
+          "3": {
+            "title": "GPT-4, 128K context - it is not big enough - DEV Community",
+            "url": "https://dev.to/maximsaplin/gpt-4-128k-context-it-is-not-big-enough-1h02",
+            "domain": "dev.to",
+            "snippet_preview": "OpenAI has recently introduced the GPT-4 Turbo model with a 128K context window. A 4x boost to the previous maximum of 32K in GPT-4.\nDid you know that this context size is enough to hold 1684 tweets o"
+          },
+          "4": {
+            "title": "Azure OpenAI Model: gpt-4.1 context window exceeded with way less than 1M tokens - Microsoft Q&A",
+            "url": "https://learn.microsoft.com/en-au/answers/questions/2280883/azure-openai-model-gpt-4-1-context-window-exceeded",
+            "domain": "learn.microsoft.com",
+            "snippet_preview": "An Azure service that provides access to OpenAI’s GPT-3 models with enterprise capabilities.\nHi Thiago Almeida,\nEven though GPT-4.1 supports up to 1 million tokens, in Azure OpenAI, the full 1M-token "
+          },
+          "5": {
+            "title": "What is the context window of gpt 4 - API - OpenAI Developer Community",
+            "url": "https://community.openai.com/t/what-is-the-context-window-of-gpt-4/701256",
+            "domain": "community.openai.com",
+            "snippet_preview": "What is the context window of GPT 4 turbo. In the below image what will be context window of first gpt. Any official source\nYou can check this information in the OpenAI documentation. GPT-4 also known"
+          }
+        },
+        "pages_used": 5
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 4,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 60.09
+    },
+    {
+      "id": "eval_004",
+      "type": "insufficient_evidence",
+      "query": "What is the exact GDP of the fictional underwater city of Atlantis in 2024?",
+      "expected_behavior": "Explicitly state that there is insufficient evidence or no reliable information because Atlantis is fictional.",
+      "session_id": "f9b080ee-1b4c-45f0-a8ca-63380c619407",
+      "final_answer": "I cannot find sufficient evidence to answer this. The provided web context does not contain information about the GDP of the fictional underwater city of Atlantis [1][2]. The sources discuss the concept of Atlantis in the context of science fiction and a proposed underwater city called \"Ocean Spiral\" [2], but do not provide economic data such as GDP [1][2]. To find the answer, a refined search for economic data or official statements from the proposed city's developers may be necessary.",
+      "citations": {
+        "1": {
+          "title": "The Ecological Imagination of Atlantis: Human–Nature Relations in Polish Young Adult Novels | Children's Literature in Education | Springer Nature Link",
+          "url": "https://link.springer.com/article/10.1007/s10583-025-09649-4",
+          "domain": "link.springer.com",
+          "snippet_preview": "Abstract\nEmploying children’s literature criticism focused on climate literacies and drawing on Timothy Morton’s theorization of “dark” ecologies, this article analyzes representations of Atlantis in "
+        },
+        "2": {
+          "title": "Paradise Found: 'Ocean Spiral' Underwater City Recalls Atlantis",
+          "url": "https://www.hauteresidence.com/ocean-spiral-underwater-city-concept-shimizu-corporation",
+          "domain": "hauteresidence.com",
+          "snippet_preview": "Finally, the lost city of Atlantis has been discovered—at least in the imagination of Shimizu Corporation, an ambitious Japanese construction company. Instead of searching for fictional Atlantis, the "
+        }
+      },
+      "pages_used": 2,
+      "conflict_warning": null,
+      "done_step": {
+        "step": "done",
+        "turn_id": 72,
+        "citation_map": {
+          "1": {
+            "title": "The Ecological Imagination of Atlantis: Human–Nature Relations in Polish Young Adult Novels | Children's Literature in Education | Springer Nature Link",
+            "url": "https://link.springer.com/article/10.1007/s10583-025-09649-4",
+            "domain": "link.springer.com",
+            "snippet_preview": "Abstract\nEmploying children’s literature criticism focused on climate literacies and drawing on Timothy Morton’s theorization of “dark” ecologies, this article analyzes representations of Atlantis in "
+          },
+          "2": {
+            "title": "Paradise Found: 'Ocean Spiral' Underwater City Recalls Atlantis",
+            "url": "https://www.hauteresidence.com/ocean-spiral-underwater-city-concept-shimizu-corporation",
+            "domain": "hauteresidence.com",
+            "snippet_preview": "Finally, the lost city of Atlantis has been discovered—at least in the imagination of Shimizu Corporation, an ambitious Japanese construction company. Instead of searching for fictional Atlantis, the "
+          }
+        },
+        "pages_used": 2
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 2,
+        "uncertainty_handled": true,
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 103.42
+    },
+    {
+      "id": "eval_005",
+      "type": "conflict",
+      "query": "Does drinking coffee increase or decrease blood pressure? Briefly state both sides.",
+      "expected_behavior": "Flag nuance or conflicting evidence, briefly state both sides, and cite sources for each side.",
+      "session_id": "3b7e53bb-7682-4092-ab7c-db0e02eda3a9",
+      "final_answer": "Sources disagree on the effect of coffee on blood pressure. \n1. According to one study, drinking coffee every day can increase systolic blood pressure (sBP) by a mean of 8.63 mmHg and mean blood pressure (mBP) by 5.85 mmHg over two years [1].\n2. However, another study found that habitual coffee drinkers do not experience a significant rise in blood pressure, and that coffee may even lower blood pressure in some cases, with three or more cups a day associated with lower peripheral and central blood pressure [2][3].",
+      "citations": {
+        "1": {
+          "title": "Coffee Consumption and Blood Pressure: Results of the Second Wave of the Cognition of Older People, Education, Recreational Activities, Nutrition, Comorbidities, and Functional Capacity Studies (COPERNICUS) - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8538539",
+          "domain": "pmc.ncbi.nlm.nih.gov",
+          "snippet_preview": "Abstract\nThis study examined the relationship between the frequency of coffee consumption and blood pressure over a two year follow up of a cohort of elderly people. Healthy, older people (N = 205) we"
+        },
+        "2": {
+          "title": "Coffee and your blood pressure - Harvard Health",
+          "url": "https://www.health.harvard.edu/heart-health/coffee_and_your_blood_pressure",
+          "domain": "health.harvard.edu",
+          "snippet_preview": "Coffee and your blood pressure\nCoffee has been part of the human diet for about 1,000 years. During much of that time, it has stimulated controversy — and in the age of Starbucks, the dispute has blos"
+        },
+        "3": {
+          "title": "Hypertension: 3 Cups of Coffee a Day May Lower Blood Pressure",
+          "url": "https://www.healthline.com/health-news/hypertension-3-cups-of-coffee-a-day-may-lower-blood-pressure",
+          "domain": "healthline.com",
+          "snippet_preview": "- A new study has found that drinking three or more cups of coffee is linked with lower blood pressure.\n- People are generally advised to not drink too much coffee because caffeine can raise blood pre"
+        }
+      },
+      "pages_used": 3,
+      "conflict_warning": "Sources disagree: The first and third snippets contradict on the claim of how coffee consumption affects blood pressure in regular coffee drinkers. The first snippet states that drinking coffee every day was associated with an increase in systolic and mean blood pressure, while the third snippet cla",
+      "done_step": {
+        "step": "done",
+        "turn_id": 73,
+        "citation_map": {
+          "1": {
+            "title": "Coffee Consumption and Blood Pressure: Results of the Second Wave of the Cognition of Older People, Education, Recreational Activities, Nutrition, Comorbidities, and Functional Capacity Studies (COPERNICUS) - PMC",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8538539",
+            "domain": "pmc.ncbi.nlm.nih.gov",
+            "snippet_preview": "Abstract\nThis study examined the relationship between the frequency of coffee consumption and blood pressure over a two year follow up of a cohort of elderly people. Healthy, older people (N = 205) we"
+          },
+          "2": {
+            "title": "Coffee and your blood pressure - Harvard Health",
+            "url": "https://www.health.harvard.edu/heart-health/coffee_and_your_blood_pressure",
+            "domain": "health.harvard.edu",
+            "snippet_preview": "Coffee and your blood pressure\nCoffee has been part of the human diet for about 1,000 years. During much of that time, it has stimulated controversy — and in the age of Starbucks, the dispute has blos"
+          },
+          "3": {
+            "title": "Hypertension: 3 Cups of Coffee a Day May Lower Blood Pressure",
+            "url": "https://www.healthline.com/health-news/hypertension-3-cups-of-coffee-a-day-may-lower-blood-pressure",
+            "domain": "healthline.com",
+            "snippet_preview": "- A new study has found that drinking three or more cups of coffee is linked with lower blood pressure.\n- People are generally advised to not drink too much coffee because caffeine can raise blood pre"
+          }
+        },
+        "pages_used": 3
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 3,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": true
+      },
+      "error": null,
+      "elapsed_seconds": 62.05
+    },
+    {
+      "id": "eval_006",
+      "type": "multi_turn_1",
+      "query": "Who directed the movie Inception?",
+      "expected_behavior": "Answer that Christopher Nolan directed Inception and cite the source.",
+      "session_id": "a84f8cde-6de9-49e8-8374-be8bbab13a3b",
+      "final_answer": "The movie Inception was directed by acclaimed filmmaker Christopher Nolan [1]. This information is also not contradicted by the second source, which is about the movie but doesn't mention the director [2]. However, since only one source directly mentions the director, the answer relies on a single citation [1].",
+      "citations": {
+        "1": {
+          "title": "Inception - LegendaryLegendary",
+          "url": "https://www.legendary.com/film/inception",
+          "domain": "legendary.com",
+          "snippet_preview": "ABOUT THE FILM\nAcclaimed filmmaker Christopher Nolan directs an international cast in “Inception,” an original sci-fi actioner that travels around the globe and into the intimate and infinite world of"
+        },
+        "2": {
+          "title": "Inception | Movie, Cast, Explained, Plot, & Director | Britannica",
+          "url": "https://www.britannica.com/topic/Inception",
+          "domain": "britannica.com",
+          "snippet_preview": "Inception\nInception, American science fiction thriller film, released in 2010, that explores the boundaries between dream and reality.\nInception centers on brooding “extractor” Dom Cobb (played by Leo"
+        }
+      },
+      "pages_used": 2,
+      "conflict_warning": null,
+      "done_step": {
+        "step": "done",
+        "turn_id": 74,
+        "citation_map": {
+          "1": {
+            "title": "Inception - LegendaryLegendary",
+            "url": "https://www.legendary.com/film/inception",
+            "domain": "legendary.com",
+            "snippet_preview": "ABOUT THE FILM\nAcclaimed filmmaker Christopher Nolan directs an international cast in “Inception,” an original sci-fi actioner that travels around the globe and into the intimate and infinite world of"
+          },
+          "2": {
+            "title": "Inception | Movie, Cast, Explained, Plot, & Director | Britannica",
+            "url": "https://www.britannica.com/topic/Inception",
+            "domain": "britannica.com",
+            "snippet_preview": "Inception\nInception, American science fiction thriller film, released in 2010, that explores the boundaries between dream and reality.\nInception centers on brooding “extractor” Dom Cobb (played by Leo"
+          }
+        },
+        "pages_used": 2
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 2,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 67.29
+    },
+    {
+      "id": "eval_007",
+      "type": "multi_turn_2",
+      "query": "What was the budget for that movie?",
+      "expected_behavior": "Use the previous Inception turn from the same session to resolve 'that movie' and answer with the movie budget.",
+      "session_id": "a84f8cde-6de9-49e8-8374-be8bbab13a3b",
+      "final_answer": "The budget for the movie Inception was $160,000,000 [1]. This information is not available in the other sources provided [2][3].",
+      "citations": {
+        "1": {
+          "title": "Inception (2010): $160M Budget & $839M Box Office | Saturation.io",
+          "url": "https://saturation.io/budgets/inception-2010",
+          "domain": "saturation.io",
+          "snippet_preview": "Inception Budget\nUpdated\nSynopsis\nDom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state,"
+        },
+        "2": {
+          "title": "Why everyone lies about their movie's budget - Los Angeles Times",
+          "url": "https://www.latimes.com/archives/blogs/the-big-picture/story/2009-01-05/why-everyone-lies-about-their-movies-budget",
+          "domain": "latimes.com",
+          "snippet_preview": "Why everyone lies about their movie’s budget\n- Share via\nThis article was originally on a blog post platform and may be missing photos, graphics or links. See About archive blog posts.\nI was at PEN US"
+        },
+        "3": {
+          "title": "Primary Sources - Cinema and Media Studies - Library Guides at University of Washington Libraries",
+          "url": "https://guides.lib.uw.edu/c.php?g=341346&p=7246038",
+          "domain": "guides.lib.uw.edu",
+          "snippet_preview": "Primary sources are items from the time period that you are studying. For Cinema and Television, these sources could include not only the films and shows themselves, but also first hand accounts and p"
+        }
+      },
+      "pages_used": 3,
+      "conflict_warning": null,
+      "done_step": {
+        "step": "done",
+        "turn_id": 75,
+        "citation_map": {
+          "1": {
+            "title": "Inception (2010): $160M Budget & $839M Box Office | Saturation.io",
+            "url": "https://saturation.io/budgets/inception-2010",
+            "domain": "saturation.io",
+            "snippet_preview": "Inception Budget\nUpdated\nSynopsis\nDom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state,"
+          },
+          "2": {
+            "title": "Why everyone lies about their movie's budget - Los Angeles Times",
+            "url": "https://www.latimes.com/archives/blogs/the-big-picture/story/2009-01-05/why-everyone-lies-about-their-movies-budget",
+            "domain": "latimes.com",
+            "snippet_preview": "Why everyone lies about their movie’s budget\n- Share via\nThis article was originally on a blog post platform and may be missing photos, graphics or links. See About archive blog posts.\nI was at PEN US"
+          },
+          "3": {
+            "title": "Primary Sources - Cinema and Media Studies - Library Guides at University of Washington Libraries",
+            "url": "https://guides.lib.uw.edu/c.php?g=341346&p=7246038",
+            "domain": "guides.lib.uw.edu",
+            "snippet_preview": "Primary sources are items from the time period that you are studying. For Cinema and Television, these sources could include not only the films and shows themselves, but also first hand accounts and p"
+          }
+        },
+        "pages_used": 3
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 3,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 67.01
+    },
+    {
+      "id": "eval_008",
+      "type": "factual",
+      "query": "What organization maintains the Unicode Standard?",
+      "expected_behavior": "Identify the Unicode Consortium as the maintainer and cite a supporting source.",
+      "session_id": "2bf0da1d-bc6d-4087-942a-723db8b94c9b",
+      "final_answer": "The organization that maintains the Unicode Standard is the Unicode Consortium [1][2]. It was founded in 1988, incorporated in 1991 according to one source [1], but another source states it was founded in 1988 and incorporated, with the exact incorporation year not specified in that source but the founding year is [2]. The Unicode Consortium is a non-profit organization dedicated to developing and maintaining the Unicode Standard [1].",
+      "citations": {
+        "1": {
+          "title": "Unicode Consortium - Teflpedia",
+          "url": "https://teflpedia.com/Unicode_Consortium",
+          "domain": "teflpedia.com",
+          "snippet_preview": "ℹ️Anon users are provided with cached versions of pages, which might be out‐of‐date.\nIf you’ve got an account, please log in.🤝\n✨Creating an account only takes 20 seconds, and doesn’t require any perso"
+        },
+        "2": {
+          "title": "Unicode Consortium | LinkedIn",
+          "url": "https://www.linkedin.com/company/unicode-inc",
+          "domain": "linkedin.com",
+          "snippet_preview": "Early registration is now open for Unicode Technology Workshop 2026! Register here: https://lnkd.in/g5_jMSZ6 Use code \"UTW2026Early\" for early bird discount until August 1. Special rates for students,"
+        }
+      },
+      "pages_used": 2,
+      "conflict_warning": null,
+      "done_step": {
+        "step": "done",
+        "turn_id": 76,
+        "citation_map": {
+          "1": {
+            "title": "Unicode Consortium - Teflpedia",
+            "url": "https://teflpedia.com/Unicode_Consortium",
+            "domain": "teflpedia.com",
+            "snippet_preview": "ℹ️Anon users are provided with cached versions of pages, which might be out‐of‐date.\nIf you’ve got an account, please log in.🤝\n✨Creating an account only takes 20 seconds, and doesn’t require any perso"
+          },
+          "2": {
+            "title": "Unicode Consortium | LinkedIn",
+            "url": "https://www.linkedin.com/company/unicode-inc",
+            "domain": "linkedin.com",
+            "snippet_preview": "Early registration is now open for Unicode Technology Workshop 2026! Register here: https://lnkd.in/g5_jMSZ6 Use code \"UTW2026Early\" for early bird discount until August 1. Special rates for students,"
+          }
+        },
+        "pages_used": 2
+      },
+      "metrics": {
+        "citation_integrity": true,
+        "source_diversity": 2,
+        "uncertainty_handled": "N/A",
+        "conflict_flagged": "N/A"
+      },
+      "error": null,
+      "elapsed_seconds": 60.42
+    }
+  ]
+}

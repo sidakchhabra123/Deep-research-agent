@@ -1,0 +1,10 @@
+streamlit
+httpx
+trafilatura
+tavily-python
+tiktoken
+python-dotenv
+google-genai
+groq
+beautifulsoup4
+requests

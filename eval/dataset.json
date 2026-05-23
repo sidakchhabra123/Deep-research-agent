@@ -1,0 +1,50 @@
+[
+  {
+    "id": "eval_001",
+    "type": "factual",
+    "query": "What is the exact release date of Python 3.12?",
+    "expected_behavior": "Answer with the specific Python 3.12 release date and cite the supporting source."
+  },
+  {
+    "id": "eval_002",
+    "type": "multi-hop",
+    "query": "Who is the CEO of the company that created the Claude 3 AI model, and what was their previous job?",
+    "expected_behavior": "Identify Anthropic as the creator of Claude 3, name its CEO, and connect that person to their prior role with citations."
+  },
+  {
+    "id": "eval_003",
+    "type": "comparison",
+    "query": "Compare the context window sizes of Gemini 1.5 Pro and GPT-4o.",
+    "expected_behavior": "Compare both models directly, state context window sizes, and cite sources for each value."
+  },
+  {
+    "id": "eval_004",
+    "type": "insufficient_evidence",
+    "query": "What is the exact GDP of the fictional underwater city of Atlantis in 2024?",
+    "expected_behavior": "Explicitly state that there is insufficient evidence or no reliable information because Atlantis is fictional."
+  },
+  {
+    "id": "eval_005",
+    "type": "conflict",
+    "query": "Does drinking coffee increase or decrease blood pressure? Briefly state both sides.",
+    "expected_behavior": "Flag nuance or conflicting evidence, briefly state both sides, and cite sources for each side."
+  },
+  {
+    "id": "eval_006",
+    "type": "multi_turn_1",
+    "query": "Who directed the movie Inception?",
+    "expected_behavior": "Answer that Christopher Nolan directed Inception and cite the source."
+  },
+  {
+    "id": "eval_007",
+    "type": "multi_turn_2",
+    "query": "What was the budget for that movie?",
+    "expected_behavior": "Use the previous Inception turn from the same session to resolve 'that movie' and answer with the movie budget."
+  },
+  {
+    "id": "eval_008",
+    "type": "factual",
+    "query": "What organization maintains the Unicode Standard?",
+    "expected_behavior": "Identify the Unicode Consortium as the maintainer and cite a supporting source."
+  }
+]

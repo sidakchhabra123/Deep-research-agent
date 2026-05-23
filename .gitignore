@@ -1,0 +1,12 @@
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.ipynb_checkpoints/
+research.db
+final_submission_render/
+~$*.docx
