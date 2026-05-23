@@ -63,8 +63,8 @@ The agent successfully demonstrates multi-turn memory and multi-hop reasoning by
 Final hardening focused on three areas. First, the system prompt was tightened so factual sentences must end with bracketed citations. Second, the Context Builder was upgraded with domain-diversity penalties and a rescue path to avoid one-domain context. Third, the evaluation harness was corrected so a valid refusal is not unfairly penalized for missing citations. These changes align the agent with the intended research behavior: answer when evidence is sufficient, refuse when it is not, and call out conflicts when sources disagree.
 # 3. Setup Instructions, Links, & Examples
 ## Links
-- GitHub Repository: [Link]
-- Video Demo: [Link]
+- GitHub Repository: https://github.com/sidakchhabra123/Deep-research-agent
+- Video Demo: [Insert Video Demo Link]
 ## Setup & Run Instructions
 1. Clone the repository.
 1. Create and activate a Python environment.
@@ -72,20 +72,19 @@ Final hardening focused on three areas. First, the system prompt was tightened s
 1. Configure the .env file.
 1. Run the Streamlit app.
 1. Run the evaluation harness manually.
-git clone [Link]
-cd deep_research_agent
+git clone https://github.com/sidakchhabra123/Deep-research-agent.git
+cd Deep-research-agent
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
+# Copy .env.example to .env, then fill in your real API keys.
 TAVILY_API_KEY=your_tavily_key_here
 GEMINI_API_KEY=your_gemini_key_here
 GROQ_API_KEY=your_groq_key_here
 SARVAM_API_KEY=your_sarvam_key_here
 
 streamlit run streamlit_app.py
-# If reorganized under app/:
-streamlit run app/streamlit_app.py
 
 python eval/eval_harness.py
 # Results: eval/results.json
